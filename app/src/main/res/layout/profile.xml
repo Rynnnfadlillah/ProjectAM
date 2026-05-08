@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/bckdash" />
+
+    <ImageButton
+        android:id="@+id/btn_kembali"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/kembali"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="Tombol Kembali"/>
+
+    <ImageButton
+        android:id="@+id/btn_image"
+        android:layout_width="179dp"
+        android:layout_height="158dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/erick"
+        android:contentDescription="Profile" />
+
+    <TextView
+        android:id="@+id/usernameProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_image"/>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameProfil"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppinsmed"
+        android:text="Super Admin"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_below="@id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_ubahpass"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/rect_btn"
+                android:drawableTop="@drawable/ubah_pass"
+                android:padding="14dp"
+                android:contentDescription="Tombol Ubah Password"/>
+
+            <TextView
+                android:id="@+id/ubahpasstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_keluar"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/rect_btn"
+                android:drawableTop="@drawable/keluar"
+                android:padding="14dp"
+                android:contentDescription="Tombol Keluar"/>
+
+            <TextView
+                android:id="@+id/keluartxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

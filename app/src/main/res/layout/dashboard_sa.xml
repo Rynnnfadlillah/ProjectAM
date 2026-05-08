@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard_SA"
+    android:background="@color/purple">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:background="@drawable/top_background"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="165dp"
+        android:background="@drawable/btmrigt" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upleft" />
+
+    <ImageButton
+        android:id="@+id/btn_profile"
+        android:layout_width="87dp"
+        android:layout_height="92dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/erick"
+        android:contentDescription="Tombol Profile"/>
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter"
+        android:textSize="30sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter"
+        android:textSize="40sp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/hello"/>
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/space"
+    android:layout_below="@+id/image">
+</Space>
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@id/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_summary"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/rect_btn"
+                android:drawableTop="@drawable/summary"
+                android:padding="14dp"
+                android:contentDescription="Tombol Summary"/>
+
+            <TextView
+                android:id="@+id/summarytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summary"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_editprdct"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/rect_btn"
+                android:drawableTop="@drawable/editprdct"
+                android:padding="14dp"
+                android:contentDescription="Tombol Edit Produk"/>
+
+            <TextView
+                android:id="@+id/editprdct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Product"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_produk"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/rect_btn"
+                android:drawableTop="@drawable/search"
+                android:padding="14dp"
+                android:contentDescription="Tombol Riwayat Produk"/>
+
+            <TextView
+                android:id="@+id/riwayattxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_editcat"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/rect_btn"
+                android:drawableTop="@drawable/editcat"
+                android:padding="14dp"
+                android:contentDescription="Edit Category"/>
+
+            <TextView
+                android:id="@+id/edicat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Variant"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

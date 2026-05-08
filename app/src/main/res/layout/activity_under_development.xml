@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Under_Development"
+    android:background="@color/black">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underdevelopment"/>
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Layout is Still Under Development"
+        android:textColor="@color/white"
+        android:fontFamily="@font/holtwood"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please click the button below  to get back to the other layout and we apologize for your inconvenience "
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsmed"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@id/title2"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_below="@id/title3"
+        android:id="@+id/btn_back"
+        android:layout_width="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/brygada"
+        android:background="@drawable/round_btn"
+        android:text="BACK"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:backgroundTint="@color/purple"/>
+
+
+</RelativeLayout>

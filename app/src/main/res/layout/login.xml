@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/purple"
+    >
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:background="@drawable/bottom_background"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/gambar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/holtwood"
+        android:text="Inventory Control"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="114dp"
+        android:background="@drawable/gbrlog" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/gambar"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-22dp"
+        android:fontFamily="@font/brygada"
+        android:text="LOGIN SUPER ADMIN"
+        android:textColor="@color/black"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/komen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/judul"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-20dp"
+        android:text="Masukan Email dan Password anda dengan benar"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/komen"
+        android:layout_marginBottom="-43dp"
+        android:text="Email"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text_email"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-54dp"
+        android:background="@drawable/round_editext"
+        android:hint="Enter Your Email"
+        android:padding="15dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/text_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/edit_email"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="-36dp"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text_email"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-144dp"
+        android:background="@drawable/round_editext"
+        android:hint="Enter Your Password"
+        android:padding="15dp"
+        android:textColor="@color/black" />
+    <CheckBox
+        android:id="@+id/showpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:layout_below="@+id/edit_password"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/showpass"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/brygada"
+            android:background="@drawable/round_btn"
+            android:text="BACK"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/brygada"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

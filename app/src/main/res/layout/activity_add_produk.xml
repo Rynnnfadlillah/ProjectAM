@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:src="@drawable/top_background"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/kembali_addcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kembali"
+            android:layout_gravity="center"
+            android:contentDescription="kembali"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Produk"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:fontFamily="@font/inter"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@id/ll1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categori"
+            android:fontFamily="@font/poppinsmed"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+        <!--menu dropdown categori-->
+        <EditText
+            android:id="@+id/nama_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_editext"
+            android:hint="Masukan Nama Kategori"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_below="@id/ll2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Variant   "
+            android:fontFamily="@font/poppinsmed"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+        <!--menu dropdown categori-->
+        <EditText
+            android:id="@+id/nama_variant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_editext"
+            android:hint="Masukan Nama Kategori"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_below="@id/ll3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produk   "
+            android:fontFamily="@font/poppinsmed"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+        <!--menu dropdown categori-->
+        <EditText
+            android:id="@+id/nama_produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_editext"
+            android:hint="Masukan Nama Produk"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_below="@id/ll4"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:fontFamily="@font/poppinsmed"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+        <!--menu dropdown categori-->
+        <EditText
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/round_editext"
+            android:hint="Masukan Deskripsi"
+            android:padding="50dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_below="@id/ll5"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock   "
+            android:fontFamily="@font/poppinsmed"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+
+
+
+        <EditText
+            android:id="@+id/angka_stock"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/round_editext"
+            android:hint="000"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_Addproduct"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll6"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_btn"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/brygada"
+        android:text="insert"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
